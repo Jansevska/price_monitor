@@ -29,7 +29,7 @@ async def scrape_amazon_bdata():
         for listing in listings:
             result = {}
             # Product name
-            name_element = await listing.query_selector('h2.a-size-mini > a > span.a-size-medium')
+            name_element = await listing.query_selector('h1.a-size-large > span.a-size-medium')
             result['product_title'] = await name_element.inner_text() if name_element else 'N/A'
 
             # Price
