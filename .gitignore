@@ -1,0 +1,11 @@
+# Ignore the virtual environment
+venv
+
+# also ignore the __pycache__
+# __pycache__
+
+# Ignore any sqlite databases
+# *.db
+
+# Ignore .env since those are our secret environment variables
+.env
